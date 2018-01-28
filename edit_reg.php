@@ -2,6 +2,8 @@
 
 	require "crud_content.php";	
 
+	$data = array();
+
 	$row = query_db_byid((int)$_GET['id'], $conn);
 
 	if ($row) {
@@ -10,10 +12,13 @@
 
 		// include "views/edit_reg.view.php";
 
-		view('edit_reg', array(
-								'title' => 'Edit page',
-								'row'	=> $row
-							));
+		$data = array(
+
+					'title' => 'Edit Page',
+					'row'	=> $row
+					);
+
+		view('edit_reg', $data);
 
 	} else {
 
@@ -21,7 +26,7 @@
 	}
 
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	if (!empty($_POST['username']) && !empty($_POST['email']) && valid_email($_POST['email'])){
 
@@ -39,6 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	} else {
 
-		$status = "Please fill out all boxes and valid email";
+		$data['status'] = "Please fill out all boxes and valid email";
 	}
 }

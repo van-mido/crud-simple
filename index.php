@@ -6,10 +6,12 @@
 	$users = get_db('users', $conn);
 
 
-	view('index', array(
+	$data = array(
 
-			'title' => 'Very simple CRUD by ',
-			'users' =>  $users,			// Pass and extract variable from function
-			'name'  => 'Ricardo Vargas'
+				'title' => 'Very simple CRUD by ',
+				'users' =>  $users,					// Pass and extract variable from function
+				'name'  => 'Ricardo Vargas' 		// You can put your name here! 
 
-		));
+				);
+
+	view('index', $data);

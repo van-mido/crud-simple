@@ -4,7 +4,7 @@
 
 	$data = array();
 
-	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 		if (empty($_POST['username']) || empty($_POST['email']) || !valid_email($_POST['email'])) {
 
