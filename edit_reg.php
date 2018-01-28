@@ -23,7 +23,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-	if (!empty($_POST['username']) && !empty($_POST['email'])){
+	if (!empty($_POST['username']) && !empty($_POST['email']) && valid_email($_POST['email'])){
 
 		$username = htmlspecialchars(trim($_POST['username']));
 		$email = htmlspecialchars(trim($_POST['email']));
@@ -39,6 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	} else {
 
-		$status = "Please fill out all boxes";
+		$status = "Please fill out all boxes and valid email";
 	}
 }

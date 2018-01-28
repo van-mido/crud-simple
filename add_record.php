@@ -6,9 +6,9 @@
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-		if (empty($_POST['username']) || empty($_POST['email'])) {
+		if (empty($_POST['username']) || empty($_POST['email']) || !valid_email($_POST['email'])) {
 
-			$data['status'] = "Please fill out the boxes!";
+			$data['status'] = "Please fill out the boxes and valid email!";
 
 		} else {
 
