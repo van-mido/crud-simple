@@ -13,7 +13,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`) VALUES
-(1, 'EricCarman', 'spike@southpark.com'),
+(1, 'EricCartman', 'ecartman@southpark.com'),
 (2, 'KyleBroflovski', 'kbroflovski@southpark.com'),
 (3, 'StanMarsh', 'smarsh@southpark.com'),
 (4, 'KennyMcCormick', 'kmccormick@southpark.com'),
