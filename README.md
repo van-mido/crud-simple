@@ -1,7 +1,7 @@
 # Crud php very simple
 
 
-# Requeriments
+# Requirements
 
 PHP version 5.3 or >
 Mysql or MariaDB
