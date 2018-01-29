@@ -10,7 +10,7 @@
 
 				'title' => 'Very simple CRUD by ',
 				'users' =>  $users,					// Pass and extract variable from function
-				'name'  => 'Ricardo Vargas' 		// You can put your name here! 
+				'name'  => 'Van Mido' 		// You can put your name here! 
 
 				);
 
