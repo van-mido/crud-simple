@@ -6,4 +6,4 @@
 
 	$conn = connect($config);
 
-	if (!$conn) die("Don't be Connected");
+	if (!$conn) die("Don't be Connected, check your credentials!\n");
