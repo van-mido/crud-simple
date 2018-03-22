@@ -3,7 +3,7 @@
 	// Credentials
 
 	$config = array(
-					'DB_USER' => 'root',  /* mysql -u 'youruser' */
+					'DB_USER' => 'rvargas',  /* mysql -u 'youruser' */
 					'DB_PASS' => 'admin',	/* mysql -p 'password' */
 					'DB_NAME' => 'crud_simple'
 					);
