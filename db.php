@@ -1,6 +1,6 @@
 <?php 
 
-	// Credentials
+	// Put here your credentials
 
 	$config = array(
 					'DB_USER' => 'rvargas',  /* mysql -u 'youruser' */

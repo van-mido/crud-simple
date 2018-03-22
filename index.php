@@ -8,9 +8,9 @@
 
 	$data = array(
 
-				'title' => 'Very simple CRUD by ',
+				'title' => 'Very simple CRUD by VanMido',
 				'users' =>  $users,					// Pass and extract variable from function
-				'name'  => 'Van Mido' 		// You can put your name here! 
+				'name'  => 'CRUD system by VanMido' 		// You can put your name here! 
 
 				);
 
