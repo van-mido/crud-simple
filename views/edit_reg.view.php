@@ -11,5 +11,7 @@
 			<p class="status"><?= $status; ?></p>
 		<?php endif ?>
 	</form>
+<p><a href="index.php">Go Back</a></p>
+	
 </body>
 </html>
