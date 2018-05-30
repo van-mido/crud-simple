@@ -2,7 +2,7 @@
 
 	require "crud_content.php";	
 
-	$data = array();
+
 
 	$row = query_db_byid((int)$_GET['id'], $conn);
 
@@ -10,7 +10,6 @@
 
 		$row = $row[0];
 
-		// include "views/edit_reg.view.php";
 
 		$data = array(
 
@@ -21,6 +20,8 @@
 		view('edit_reg', $data);
 
 	} else {
+
+		// Redirect if $row is not true
 
 		header('Location: add_record.php');
 	}
