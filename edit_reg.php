@@ -2,8 +2,6 @@
 
 	require "crud_content.php";	
 
-
-
 	$row = query_db_byid((int)$_GET['id'], $conn);
 
 	if ($row) {
@@ -17,7 +15,6 @@
 					'row'	=> $row
 					);
 
-		view('edit_reg', $data);
 
 	} else {
 
@@ -46,5 +43,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	} else {
 
 		$data['status'] = "Please fill out all boxes and valid email";
+
+
 	}
 }
+
+		view('edit_reg', $data);
