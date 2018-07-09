@@ -11,5 +11,6 @@ Apache2 or Nginx --> web Server
 
 -> db_crud.sql
 
-
+To install database:
+ -> mysql -u root -p < db_crud.sql
 
